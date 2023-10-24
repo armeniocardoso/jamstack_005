@@ -1,6 +1,7 @@
 import React from "react"
 import "./layout.css"
 import { Link } from "gatsby"
+import Footer from "./footer"
 
 export default function Layout({ children }) {
     return (
@@ -15,9 +16,7 @@ export default function Layout({ children }) {
             <div className="main">
                 {children}
             </div>
-            <div className="footer">
-                <h3>Aqui vai um rodapé</h3>
-            </div>
+            <Footer copyrightYear="2023" />
         </main >
     )
 }
