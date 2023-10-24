@@ -1,13 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-export default function Uf({ setOpcaoUf }) {
-
+export default function Ufs({ setOpcaoUf }) {
+    
     const [options, setOptions] = useState([]);
 
     useEffect(() => {
         const opt = [{ key: "", value: "Selecione..." }];
-
         fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome")
             .then(results => results.json())
             .then(data => {
