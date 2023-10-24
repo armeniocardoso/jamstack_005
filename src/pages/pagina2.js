@@ -1,10 +1,10 @@
 import * as React from "react"
 import Layout from "../components/layout"
 
-const IndexPage = () => {
+const Pagina2 = () => {
   return (
     <Layout>
-      <h1>Olá Mundo Gatsby</h1>
+      <h1>Essa é uma página 2</h1>
       <div>
         <p>Esse é o primeiro parágrafo</p>
         <p>Esse é o segundo parágrafo</p>
@@ -13,6 +13,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default Pagina2
 
-export const Head = () => <title>Início</title>
+export const Head = () => <title>Página 2</title>
